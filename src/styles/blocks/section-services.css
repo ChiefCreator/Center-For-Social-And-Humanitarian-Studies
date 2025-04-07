@@ -1,0 +1,5 @@
+.section-services__cards-list {
+  display: flex;
+  flex-direction: column;
+  gap: 100px;
+}

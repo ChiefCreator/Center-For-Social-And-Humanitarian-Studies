@@ -1,0 +1,59 @@
+<header class="header">
+  <div class="container">
+    <div class="header__container">
+      @@include("./logo.html", {
+        "class": "header__logo",
+      })
+      
+      <div class="header__menu">
+        <nav class="header__nav">
+          <ul class="header__links">
+            <li class="header__link-wrapper">
+              @@include("./link.html", {
+                "title": "О нас",
+                "href": "#about",
+                "class": "header__link",
+              })
+            </li>
+            <li class="header__link-wrapper">
+              @@include("./link.html", {
+                "title": "Услуги",
+                "href": "#service",
+                "class": "header__link",
+              })
+            </li>
+            <li class="header__link-wrapper">
+              @@include("./link.html", {
+                "title": "Возможности",
+                "href": "#oppotunities",
+                "class": "header__link",
+              })
+            </li>
+            <li class="header__link-wrapper">
+              @@include("./link.html", {
+                "title": "Наша команда",
+                "href": "#team",
+                "class": "header__link",
+              })
+            </li>
+            <li class="header__link-wrapper">
+              @@include("./link.html", {
+                "title": "Контакты",
+                "href": "#contacts",
+                "class": "header__link",
+              })
+            </li>
+          </ul>
+        </nav>
+
+        <span class="header__delimiter"></span>
+
+        @@include("./button-send.html", {
+          "class": "header__button-send",
+          "title": "Связаться",
+          "type": "button"
+        })
+      </div>
+    </div>
+  </div>
+</header>

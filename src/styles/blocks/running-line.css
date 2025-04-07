@@ -1,0 +1,17 @@
+.running-line {
+  width: 100%;
+}
+
+.running-line__tracks-wrapper {
+  display: flex;
+}
+
+.running-line__track {
+  display: flex;
+  gap: 50px;
+  padding: 0 25px;
+}
+
+.running-line__logo {
+  display: block;
+}

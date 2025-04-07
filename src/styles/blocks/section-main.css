@@ -1,0 +1,31 @@
+.section-main {
+  /* min-height: 100vh; */
+}
+.section-main__container {
+  display: flex;
+  align-items: center;
+}
+.section-main__content {
+  flex: 1 1 auto;
+}
+.section-main__illustration {
+  flex: 0 0 500px;
+  aspect-ratio: 1;
+}
+
+.section-main__title {
+  font-size: 40px;
+  font-weight: 600;
+  font-family: var(--font-h1);
+  text-transform: uppercase;
+  color: var(--color-neutral-contrast);
+}
+.section-main__description {
+  margin-top: 30px;
+  font-size: 20px;
+  color: var(--color-neutral-contrast--light);
+  max-width: 500px;
+}
+.section-main__button-send {
+  margin-top: 25px;
+}

@@ -1,0 +1,37 @@
+.header {
+  width: 100%;
+  padding: 20px 0;
+}
+.header__container {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+}
+
+.header__menu {
+  margin-left: auto;
+  display: flex;
+  align-items: center;
+  gap: 30px;
+}
+
+.header__nav {
+}
+.header__links {
+  display: flex;
+  gap: 30px;
+}
+.header__link {
+  font-size: 16px;
+}
+
+.header__delimiter {
+  display: block;
+  width: 1px;
+  height: 24px;
+  background-color: var(--color-secondary--dark);
+}
+
+.header__logo {
+  width: 150px;
+}

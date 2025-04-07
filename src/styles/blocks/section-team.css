@@ -1,0 +1,33 @@
+.section-team__header {
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+}
+
+.section-team__description {
+  max-width: 500px;
+}
+
+.team-description {
+  margin-top: 40px;
+}
+
+.team-description__title {
+  font-size: 24px;
+  font-weight: 400;
+  font-family: var(--font-h1);
+  color: var(--color-neutral-contrast);
+  text-transform: uppercase;
+  margin-bottom: 15px;
+}
+
+.team-description__list {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px 15px;
+}
+
+.team-description__text {
+  font-size: 20px;
+  color: var(--color-neutral-contrast--light);
+}

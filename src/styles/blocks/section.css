@@ -1,0 +1,23 @@
+.section {
+  margin-bottom: 100px;
+}
+.section:last-child {
+  margin-bottom: 0;
+}
+
+.section__header {
+  margin-bottom: 40px;
+}
+
+.section__title {
+  font-size: 28px;
+  font-weight: 500;
+  font-family: var(--font-h1);
+  color: var(--color-neutral-contrast);
+  text-transform: uppercase;
+}
+
+.section__description {
+  font-size: 20px;
+  color: var(--color-neutral-contrast--light);
+}

@@ -1,0 +1,27 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Serif:ital,opsz,wght@0,8..144,100..900;1,8..144,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Serif:ital,opsz,wght@0,8..144,100..900;1,8..144,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+:root {
+  --color-primary: #1D117E;
+  --color-primary--dark: #1a0e71;
+  --color-primary--light: rgb(36, 21, 149);
+  --color-primary--lighten: rgb(44, 26, 182);
+
+  --color-secondary: #ECF1F6;
+  --color-secondary--dark: #d5dadf;
+
+  --color-neutral-main: white;
+  --color-neutral-main--light: #f0f0f0;
+  --color-neutral-main--lighten: #f0f0f0;
+  --color-neutral-main--dark: #eee7e7;
+  --color-neutral-main--darken: #c2beba;
+
+  --color-neutral-contrast: #04001F;
+  --color-neutral-contrast--light: #67617B;
+  --color-neutral-contrast--lighten: rgb(247, 249, 252);
+  --color-neutral-contrast--dark: #d9d9d9;
+  --color-neutral-contrast--darken: #c2beba;
+
+  --font-h1: "Roboto Serif", serif;
+  --font-text: "Roboto";
+}

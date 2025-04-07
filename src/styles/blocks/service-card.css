@@ -1,0 +1,49 @@
+.service-card {
+  display: flex;
+  align-items: center;
+  gap: 120px;
+}
+
+.service-card:nth-child(even) {
+  flex-direction: row-reverse;
+}
+
+.service-card__illustration {
+  flex: 1 1 auto;
+  max-width: 750px;
+}
+.service-card__img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+}
+
+.service-card__content {
+  flex: 0 0 30%;
+}
+
+.service-card__order {
+  display: inline-block;
+  font-size: 28px;
+  font-weight: 500;
+  font-family: var(--font-h1);
+  color: var(--color-primary);
+  text-transform: uppercase;
+  margin-bottom: 10px;
+}
+.service-card__title {
+  font-size: 28px;
+  font-weight: 500;
+  font-family: var(--font-h1);
+  color: var(--color-neutral-contrast);
+  text-transform: uppercase;
+  margin-bottom: 20px;
+}
+.service-card__description {
+  font-size: 20px;
+  color: var(--color-neutral-contrast--light);
+  margin-bottom: 40px;
+}
+.service-card__button-send {
+
+}

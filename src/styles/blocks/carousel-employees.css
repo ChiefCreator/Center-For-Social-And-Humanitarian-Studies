@@ -1,0 +1,7 @@
+.carousel-employees__card {
+  width: 100%;
+  pointer-events: none;
+}
+.carousel-employees .carousel__track {
+  gap: 50px;
+}

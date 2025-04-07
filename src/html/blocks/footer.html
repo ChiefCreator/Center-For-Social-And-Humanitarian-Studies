@@ -1,0 +1,87 @@
+<footer class="footer">
+  <div class="container">
+    <div class="footer-container">
+        @@include("./logo.html")
+
+        <div class="links-block">
+          <h6 class="links-block__title">Навигация  по сайту</h6>
+      
+          <nav class="links-block__navigation">
+            <ul class="links-block__list">
+              <li class="links-block__link-wrapper">
+                @@include("./link.html", {
+                  "title": "О нас",
+                  "href": "#about",
+                  "class": "links-block__link",
+                })
+              </li>
+              <li class="links-block__link-wrapper">
+                @@include("./link.html", {
+                  "title": "Услуги",
+                  "href": "#service",
+                  "class": "links-block__link",
+                })
+              </li>
+              <li class="links-block__link-wrapper">
+                @@include("./link.html", {
+                  "title": "Возможности",
+                  "href": "#oppotunities",
+                  "class": "links-block__link",
+                })
+              </li>
+              <li class="links-block__link-wrapper">
+                @@include("./link.html", {
+                  "title": "Наша команда",
+                  "href": "#team",
+                  "class": "links-block__link",
+                })
+              </li>
+              <li class="links-block__link-wrapper">
+                @@include("./link.html", {
+                  "title": "Контакты",
+                  "href": "#contacts",
+                  "class": "links-block__link",
+                })
+              </li>
+            </ul>
+          </nav>
+        </div>
+      
+        <div class="links-block">
+          <h6 class="links-block__title">Связаться</h6>
+      
+          <ul class="links-block__list">
+            <li class="links-block__link-wrapper">
+              @@include("./link.html", {
+                "title": "+375 29 135 57 50",
+                "href": "#about",
+                "class": "links-block__link",
+              })
+            </li>
+            <li class="links-block__link-wrapper">
+              @@include("./link.html", {
+                "title": "sociology@bseu.by",
+                "href": "#service",
+                "class": "links-block__link",
+              })
+            </li>
+            <li class="links-block__link-wrapper">
+              @@include("./link.html", {
+                "title": "lashuk@bseu.by",
+                "href": "#service",
+                "class": "links-block__link",
+              })
+            </li>
+          </ul>
+        </div>
+      
+        <div class="map-block">
+          <h6 class="map-block__title">Адрес</h6>
+      
+          <div class="map" id="map">
+            <iframe src="https://yandex.ru/map-widget/v1/?um=constructor%3A6eb32051f8a088ec640ea4bd747bcb616ae7ff34e80357b2ed577d609047cdbd&amp;source=constructor" width="100%" height="100%" frameborder="0"></iframe>
+          </div>
+        </div>
+    </div>
+  </div>
+</footer>

@@ -1,0 +1,18 @@
+<article class="service-card">
+  <div class="service-card__illustration">
+    <img class="service-card__img" src="./../../images/@@imgSrcName" alt="Иллюстрация услуги">
+  </div>
+
+  <div class="service-card__content">
+    <span class="service-card__order">@@order</span>
+
+    <h4 class="service-card__title">@@title</h4>
+    <p class="service-card__description">@@description</p>
+
+    @@include("./button-send.html", {
+      class: "service-card__button-send",
+      title: "заказать исследование",
+      type: "button"
+    })
+  </div>
+</article>

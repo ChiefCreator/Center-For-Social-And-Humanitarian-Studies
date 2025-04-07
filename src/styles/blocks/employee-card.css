@@ -1,0 +1,32 @@
+.employee-card {
+  width: 100%;
+  overflow: hidden;
+  height: 100%;
+}
+.employee-card__img {
+  width: 100%;
+  aspect-ratio: 1/1.4;
+  border-radius: 15px;
+  object-fit: cover;
+}
+
+.employee-card__content {
+  display: flex;
+  flex-direction: column;
+}
+
+.employee-card__name {
+  font-size: 20px;
+  font-weight: 500;
+  font-family: var(--font-text);
+  color: var(--color-neutral-contrast);
+}
+
+.employee-card__post {
+  font-size: 14px;
+  font-weight: 400;
+  text-transform: uppercase;
+  font-family: var(--font-text);
+  color: var(--color-primary);
+  margin-top: auto;
+}

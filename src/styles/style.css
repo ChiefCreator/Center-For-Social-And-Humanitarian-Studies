@@ -1,0 +1,23 @@
+@import "./base/_vars.css";
+@import "./base/_reset.css";
+@import "./base/_base.css";
+@import "./base/_utils.css";
+
+@import "./blocks/logo.css";
+@import "./blocks//button-send.css";
+@import "./blocks/link.css";
+@import "./blocks/running-line.css";
+@import "./blocks/chart.css";
+@import "./blocks/service-card.css";
+@import "./blocks/employee-card.css";
+@import "./blocks/carousel.css";
+@import "./blocks/carousel-employees.css";
+
+
+@import "./blocks/header.css";
+@import "./blocks/section.css";
+@import "./blocks/section-main.css";
+@import "./blocks/section-about.css";
+@import "./blocks/section-services.css";
+@import "./blocks/section-team.css";
+@import "./blocks/footer.css";
