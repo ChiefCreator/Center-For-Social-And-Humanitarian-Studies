@@ -2,6 +2,9 @@ import Highcharts from "highcharts";
 
 import RunningLine from "./modules/RunningLine.js";
 import Carousel from "./modules/Carousel.js";
+import Checkbox from "./modules/Checkbox.js";
+
+import initFormHandler from "./modules/initFormHandler.js";
 
 window.onload = function () {
   const runningLineEl = document.getElementById("running-line");
@@ -106,4 +109,9 @@ window.onload = function () {
   });
 
   const slider = new Carousel("#carousel-employees", 4);
+
+  const checkbox = document.querySelector(".checkbox");
+  const checkboxObj = new Checkbox(checkbox);
+
+  initFormHandler();
 };

@@ -1,0 +1,34 @@
+<form class="form" id="form-feedback" novalidate>
+  <div class="form__container">
+    <div class="form__group">
+      @@include("./form-field.html", {
+        name: "name",
+        label: "Имя",
+        placeholder: "Введите имя"
+      })
+
+      @@include("./form-field.html", {
+        name: "email",
+        label: "Электронная почта",
+        placeholder: "Введите адрес электронной почты"
+      })
+
+      @@include("./form-textarea-field.html", {
+        name: "description",
+        label: "Описание",
+        placeholder: "Введите ваши пожелания"
+      })
+    </div>
+
+    @@include("./checkbox.html", {
+      name: "agreement",
+      class: "form__checkbox",
+    })
+
+    @@include("./button-send.html", {
+      class: "form__button-submit",
+      type: "submit",
+      title: "Заказать исследование"
+    })
+  </div>
+</form>

@@ -1,0 +1,13 @@
+.form__group {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.form__checkbox {
+  margin-top: 20px;
+}
+
+.form__button-submit {
+  margin-top: 20px;
+}

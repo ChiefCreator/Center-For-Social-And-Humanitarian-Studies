@@ -12,6 +12,10 @@
 @import "./blocks/employee-card.css";
 @import "./blocks/carousel.css";
 @import "./blocks/carousel-employees.css";
+@import "./blocks/form.css";
+@import "./blocks/form-field.css";
+@import "./blocks/section-feedback.css";
+@import "./blocks/checkbox.css";
 
 
 @import "./blocks/header.css";
@@ -20,4 +24,5 @@
 @import "./blocks/section-about.css";
 @import "./blocks/section-services.css";
 @import "./blocks/section-team.css";
+@import "./blocks/section-feedback.css";
 @import "./blocks/footer.css";

@@ -1,0 +1,62 @@
+.form-field {
+  display: flex;
+  flex-direction: column;
+  gap: 7px;
+  border: none;
+}
+.form-field__label {
+  color: var(--color-contrast-neutral);
+  font-size: 18px;
+  font-weight: 400;
+  font-family: var(--font-h1);
+}
+
+.input {
+  width: 100%;
+  background-color: var(--color-secondary);
+  border-radius: 15px;
+  border: 1px solid transparent;
+  transition: border .3s ease;
+  overflow: hidden;
+}
+.input__item {
+  width: 100%;
+  padding: 15px;
+  background-color: transparent;
+
+  font-size: 16px;
+  font-family: var(--font-text);
+  font-weight: 400;
+  color: var(--color-contrast-neutral--light) !important;
+}
+.input__item::placeholder {
+  color: var(--color-neutral-contrast--light);
+}
+
+.textarea {
+  width: 100%;
+  min-height: 200px;
+  max-height: 250px;
+  padding: 15px;
+  background-color: var(--color-secondary);
+  border-radius: 15px;
+  resize: vertical;
+
+  font-size: 16px;
+  font-family: var(--font-text);
+  font-weight: 400;
+  color: var(--color-contrast-neutral--light) !important;
+}
+.textarea::placeholder {
+  color: var(--color-neutral-contrast--light);
+}
+
+/* Валидация */
+
+.form-field.error .input {
+  border: 1px solid red;
+}
+.form-field__error {
+  color: red;
+  font-size: 14px;
+}
