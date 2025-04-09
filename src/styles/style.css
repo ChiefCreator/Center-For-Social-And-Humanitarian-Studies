@@ -16,6 +16,9 @@
 @import "./blocks/form-field.css";
 @import "./blocks/section-feedback.css";
 @import "./blocks/checkbox.css";
+@import "./blocks/tabs.css";
+@import "./blocks/performance-tab-panel.css";
+@import "./blocks/social-connections.css";
 
 
 @import "./blocks/header.css";
@@ -25,4 +28,5 @@
 @import "./blocks/section-services.css";
 @import "./blocks/section-team.css";
 @import "./blocks/section-feedback.css";
+@import "./blocks/section-performance.css";
 @import "./blocks/footer.css";

@@ -3,6 +3,7 @@ import Highcharts from "highcharts";
 import RunningLine from "./modules/RunningLine.js";
 import Carousel from "./modules/Carousel.js";
 import Checkbox from "./modules/Checkbox.js";
+import Tabs from "./modules/Tabs.js";
 
 import initFormHandler from "./modules/initFormHandler.js";
 
@@ -114,4 +115,7 @@ window.onload = function () {
   const checkboxObj = new Checkbox(checkbox);
 
   initFormHandler();
+
+  const tabsEl = document.querySelector(".performance-tabs");
+  const tabsObj = new Tabs(tabsEl, 10000);
 };

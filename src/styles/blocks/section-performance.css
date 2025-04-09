@@ -1,0 +1,9 @@
+.section-performance__header {
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+}
+
+.section-performance__description {
+  max-width: 500px;
+}

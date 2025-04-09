@@ -1,0 +1,27 @@
+.performance-tab-panel {
+  
+}
+
+.performance-tab-panel__content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 15px;
+  position: relative;
+
+}
+
+.performance-tab-panel__description {
+  font-size: 20px;
+  color: var(--color-neutral-contrast--light);
+  font-family: var(--font-text);
+
+  opacity: 0;
+  translate: 0 50%;
+  transition: opacity .75s ease, translate .5s ease;
+}
+
+.tab-panel_active .performance-tab-panel__description {
+  translate: 0 0;
+  opacity: 1;
+}

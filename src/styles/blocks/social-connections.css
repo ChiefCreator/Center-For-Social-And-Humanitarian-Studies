@@ -1,0 +1,61 @@
+.social-connections {
+  width: 100%;
+}
+
+.social-connections__map {
+  fill: var(--color-secondary--dark);
+  transform-origin: center;
+  animation: scalePulse 7.5s ease-in-out infinite;
+  transition: fill .3s ease;
+}
+
+.social-connections-circle {
+  transform-origin: center;
+}
+.social-connections-circle_small, .social-connections-circle_big {
+  animation: rotate-circle 15s linear infinite;
+}
+.social-connections-circle_small .social-connections-person, .social-connections-circle_big .social-connections-person  {
+  animation: rotate-circle 15s linear infinite reverse;
+}
+.social-connections-circle_medium {
+  animation: rotate-circle 15s linear infinite reverse;
+}
+.social-connections-circle_medium .social-connections-person {
+  animation: rotate-circle 15s linear infinite;
+}
+
+.social-connections-line {
+  fill: #333333;
+}
+
+.social-connections-person {
+  transition: transform 0.3s ease;
+  cursor: pointer;
+}
+.social-connections-person:hover {
+  transform: scale(1.1);
+}
+
+@keyframes rotate-circle {
+  from {
+    rotate: 0deg;
+  }
+  to {
+    rotate: 360deg;
+  }
+}
+@keyframes scalePulse {
+  0% {
+    scale: 1;
+    opacity: 1;
+  }
+  50% {
+    scale: 0.975;
+    opacity: 0.8;
+  }
+  100% {
+    scale: 1;
+    opacity: 1;
+  }
+}
