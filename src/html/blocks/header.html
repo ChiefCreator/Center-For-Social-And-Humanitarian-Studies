@@ -17,15 +17,15 @@
             </li>
             <li class="header__link-wrapper">
               @@include("./link.html", {
-                "title": "Услуги",
-                "href": "#service",
+                "title": "Деятельность",
+                "href": "#performance",
                 "class": "header__link",
               })
             </li>
             <li class="header__link-wrapper">
               @@include("./link.html", {
-                "title": "Возможности",
-                "href": "#oppotunities",
+                "title": "Услуги",
+                "href": "#service",
                 "class": "header__link",
               })
             </li>
@@ -48,10 +48,10 @@
 
         <span class="header__delimiter"></span>
 
-        @@include("./button-send.html", {
+        @@include("./button-link.html", {
           "class": "header__button-send",
           "title": "Связаться",
-          "type": "button"
+          "href": "#contacts"
         })
       </div>
     </div>

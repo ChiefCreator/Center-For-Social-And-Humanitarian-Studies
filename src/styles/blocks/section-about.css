@@ -7,3 +7,13 @@
 .section-about__description {
   max-width: 500px;
 }
+
+.section-about__body {
+  margin-top: 50px;
+}
+
+.section-about__advantages {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}

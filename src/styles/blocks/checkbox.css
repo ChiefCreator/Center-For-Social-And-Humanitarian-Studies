@@ -49,6 +49,13 @@
   translate: 0 0; 
 }
 
+.checkbox__politics {
+  color: var(--color-primary);
+}
+.checkbox__politics:hover {
+  text-decoration: underline;
+}
+
 /* Валидация */
 
 .checkbox.error .checkbox-item {
