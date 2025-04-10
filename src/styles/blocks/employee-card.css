@@ -28,5 +28,13 @@
   text-transform: uppercase;
   font-family: var(--font-text);
   color: var(--color-primary);
+  margin-top: 5px;
+}
+
+.employee-card__academic-degree {
+  font-size: 14px;
+  font-weight: 400;
+  font-family: var(--font-text);
+  color: var(--color-neutral-contrast--light);
   margin-top: auto;
 }

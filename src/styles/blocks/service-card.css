@@ -11,6 +11,11 @@
 .service-card__illustration {
   flex: 1 1 auto;
   max-width: 750px;
+  height: 400px;
+}
+.employee-card__chart {
+  width: 100%;
+  height: 100%;
 }
 .service-card__img {
   width: 100%;
