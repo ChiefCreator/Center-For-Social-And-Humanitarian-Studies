@@ -4,6 +4,7 @@ import Timeline from 'highcharts/modules/timeline.js';
 
 import RunningLine from "./modules/RunningLine.js";
 import Carousel from "./modules/Carousel.js";
+import CircularSlider from "./modules/CircularSlider.js";
 import Checkbox from "./modules/Checkbox.js";
 import Tabs from "./modules/Tabs.js";
 
@@ -454,4 +455,7 @@ window.onload = function () {
       ]
     }]
   });
+
+  const circularSliderEl = document.querySelector(".circular-slider");
+  new CircularSlider(circularSliderEl, [document.querySelector(".work-results-button.prev"), document.querySelector(".work-results-button.next")]);
 };
