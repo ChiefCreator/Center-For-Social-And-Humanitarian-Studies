@@ -11,16 +11,28 @@ import { files } from './gulp/tasks/files.js';
 import { scripts } from './gulp/tasks/scripts.js';
 import { watchFiles } from "./gulp/tasks/watchFiles.js";
 
-gulp.task("default", gulp.series(
+gulp.task("build:dev", gulp.series(
+  createDist,
+  cleanBuild,
+  gulp.parallel(html, styles, images, fonts, files, scripts),
+));
+
+gulp.task("dev", gulp.series(
   createDist,
   cleanBuild,
   gulp.parallel(html, styles, images, fonts, files, scripts),
   gulp.parallel(server, watchFiles),
 ));
 
-gulp.task("build", gulp.series(
+gulp.task("build:prod", gulp.series(
   createDist,
   cleanBuild,
   gulp.parallel(html, styles, images, fonts, files, scripts),
-  server,
+));
+
+gulp.task("preview", gulp.series(
+  createDist,
+  cleanBuild,
+  gulp.parallel(html, styles, images, fonts, files, scripts),
+  gulp.parallel(server),
 ));

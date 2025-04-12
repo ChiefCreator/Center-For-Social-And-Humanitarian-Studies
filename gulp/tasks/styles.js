@@ -2,6 +2,8 @@ import gulp from 'gulp';
 import plumber from 'gulp-plumber';
 import changed from 'gulp-changed';
 import sourcemaps from "gulp-sourcemaps";
+import groupMedia from "gulp-group-css-media-queries";
+import cleanCSS from "gulp-clean-css";
 import autoprefixer from "gulp-autoprefixer";
 import noop from "gulp-noop";
 import rename from "gulp-rename";
