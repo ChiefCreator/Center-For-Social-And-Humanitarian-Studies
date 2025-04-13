@@ -58,7 +58,7 @@
 }
 
 .tab-button_active .tab-button-loader__bar {
-  animation: progressGrow 10s linear forwards;
+  animation: progressGrow 15s linear forwards;
 }
 
 @keyframes progressGrow {
@@ -85,5 +85,10 @@
   }
   .tab-button_active {
     font-size: clamp(15px, 4.5vw, 22px);
+  }
+  .tab-button_active .tab-button-loader__bar {
+    width: 100%;
+    transition: width .5s ease;
+    animation: none;
   }
 }

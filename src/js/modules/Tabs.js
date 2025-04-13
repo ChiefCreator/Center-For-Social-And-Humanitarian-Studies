@@ -9,12 +9,15 @@ export default class Tabs {
     this.intervalTime = interval;
     this.timer = null;
 
+    this.isAutoSwitch = !this._isInBreakpoint();
+    console.log(this.isAutoSwitch)
+
     this._init();
   }
 
   _handleButtonClick(index) {
     this.showTab(index);
-    this._resetInterval();
+    this.isAutoSwitch && this._resetInterval();
   }
 
   showTab(index) {
@@ -38,12 +41,26 @@ export default class Tabs {
     clearInterval(this.timer);
     this._startAutoSwitch();
   }
+  _isInBreakpoint() {
+    const width = window.innerWidth;
+    return width < 1024;
+  }
 
   _init() {
     this.buttons.forEach((button, i) => {
       button.addEventListener("click", () => this._handleButtonClick(i));
     });
 
-    this._startAutoSwitch();
+    window.addEventListener("resize", () => {
+      this.isAutoSwitch = !this._isInBreakpoint();
+
+      if (this.isAutoSwitch) {
+        this._resetInterval();
+      } else {
+        clearInterval(this.timer);
+      }
+    })
+
+    this.isAutoSwitch && this._startAutoSwitch();
   }
 }

@@ -73,7 +73,20 @@ export default class Carousel {
     const endX = e.changedTouches ? e.changedTouches[0].clientX : e.clientX;
     const dx = endX - this.startX;
 
-    const transferedIndex = Math.round(-dx / (this.slideWidth + this.gap));
+    if (Math.abs(dx) < 50) {
+      this.moveByIndex(0);
+
+      return;
+    };
+
+    let transferedIndex = 0;
+    const scrollOffsetPerSlide = -dx / (this.slideWidth + this.gap);
+
+    if (dx < 0) {
+      transferedIndex = Math.ceil(scrollOffsetPerSlide);
+    } else {
+      transferedIndex = Math.floor(scrollOffsetPerSlide);
+    }
 
     this.moveByIndex(transferedIndex);
   }

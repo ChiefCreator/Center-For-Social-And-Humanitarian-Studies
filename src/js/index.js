@@ -24,7 +24,7 @@ window.onload = function () {
   const runningLine = new RunningLine(runningLineEl);
 
   const tabsEl = document.querySelector(".performance-tabs");
-  const tabsObj = new Tabs(tabsEl, 10000);
+  const tabsObj = new Tabs(tabsEl, 15000);
 
   const slider = new Carousel("#carousel-employees", getSlidesPerView());
 
