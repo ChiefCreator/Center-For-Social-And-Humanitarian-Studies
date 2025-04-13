@@ -1,0 +1,40 @@
+<div class="menu-mobile" id="menu-mobile">
+  <div class="container">
+    <div class="menu-mobile__container">
+      <header class="menu-mobile__header">
+        <h4 class="menu-mobile__title">Меню</h4>
+
+        @@include("./button-close.html", { "class": "menu-mobile__button-close" })
+      </header>
+
+      <div class="menu-mobile__body">
+        <div class="mobile-menu-links-block links-block_navigation">
+          <h6 class="mobile-menu-links-block__title">Навигация</h6>
+
+          <nav class="mobile-menu-links-block__nav">
+            <ul class="mobile-menu-links-block__list">
+              <li class="mobile-menu-links-block__link-wrapper">@@include("./link.html", { "title": "О нас", "href": "#about", "class": "mobile-menu-links-block__link anchor-link", })</li>
+              <li class="mobile-menu-links-block__link-wrapper">@@include("./link.html", { "title": "Деятельность", "href": "#performance", "class": "mobile-menu-links-block__link anchor-link", })</li>
+              <li class="mobile-menu-links-block__link-wrapper">@@include("./link.html", { "title": "Услуги", "href": "#service", "class": "mobile-menu-links-block__link anchor-link", })</li>
+              <li class="mobile-menu-links-block__link-wrapper">@@include("./link.html", { "title": "Наша команда", "href": "#team", "class": "mobile-menu-links-block__link anchor-link", })</li>
+              <li class="mobile-menu-links-block__link-wrapper">@@include("./link.html", { "title": "Результаты работы", "href": "#work-results", "class": "mobile-menu-links-block__link anchor-link", })</li>
+              <li class="mobile-menu-links-block__link-wrapper">@@include("./link.html", { "title": "Контакты", "href": "#contacts", "class": "mobile-menu-links-block__link anchor-link", })</li>
+            </ul>
+          </nav>
+        </div>
+
+        <div class="mobile-menu-links-block links-block_contact">
+          <h6 class="mobile-menu-links-block__title">Связаться</h6>
+
+          <ul class="mobile-menu-links-block__list">
+            <li class="mobile-menu-links-block__link-wrapper">@@include("./link.html", { "title": "+375 29 135 57 50", "href": "tel:+375291355750", "class": "mobile-menu-links-block__link", })</li>
+            <li class="mobile-menu-links-block__link-wrapper">@@include("./link.html", { "title": "sociology@bseu.by", "href": "mailto:sociology@bseu.by", "class": "mobile-menu-links-block__link", })</li>
+            <li class="mobile-menu-links-block__link-wrapper">@@include("./link.html", { "title": "lashuk@bseu.by", "href": "mailto:lashuk@bseu.by", "class": "mobile-menu-links-block__link", })</li>
+          </ul>
+        </div>
+
+        @@include("./button-link.html", { "class": "menu-mobile__button-send anchor-link", "title": "Связаться", "href": "#contacts" })
+      </div>
+    </div>
+  </div>
+</div>

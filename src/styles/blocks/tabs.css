@@ -1,6 +1,6 @@
 .tabs {
   display: flex;
-  gap: 100px;
+  gap: clamp(15px, 3vw, 100px);
 }
 
 .tabs__menu {
@@ -8,8 +8,13 @@
   display: flex;
   flex-direction: column;
   align-items: start;
-  gap: 40px;
+  gap: clamp(10px, 3vw, 20px);
+  overflow: auto;
 }
+.tabs__menu::-webkit-scrollbar {
+  display: none;
+}
+
 .tabs__content {
   flex: 1 1 auto;
 
@@ -29,12 +34,13 @@
   text-align: start;
   cursor: pointer;
   color: var(--color-neutral-contrast--light);
-  font-size: 24px;
+  font-size: clamp(15px, 4.5vw, 22px);
   transition: font-size .3s ease;
 }
 .tab-button__title {
   font-weight: 500;
   text-transform: uppercase;
+  text-wrap: nowrap;
 }
 
 .tab-button-loader {
@@ -65,6 +71,19 @@
 }
 
 .tab-button_active {
-  font-size: 26px;
+  font-size: clamp(15px, 5.5vw, 24px);
   color: var(--color-primary);
+}
+
+@media (max-width: 1023.5px) {
+  .tabs {
+    flex-direction: column;
+  }
+  .tabs__menu {
+    flex: 0 1 auto;
+    flex-direction: row;
+  }
+  .tab-button_active {
+    font-size: clamp(15px, 4.5vw, 22px);
+  }
 }

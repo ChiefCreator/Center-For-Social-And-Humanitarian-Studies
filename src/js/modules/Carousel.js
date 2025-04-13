@@ -1,5 +1,5 @@
 export default class Carousel {
-  constructor(selector, visibleCount = 1) {
+  constructor(selector, visibleCount = 4) {
     this.slider = document.querySelector(selector);
     this.track = this.slider.querySelector(".carousel__track");
     this.trackWrapper = this.slider.querySelector(".carousel__track-wrapper");
@@ -43,6 +43,10 @@ export default class Carousel {
   moveByIndex(transferedIndex) {
     this.current = this.limitIndex(this.current + transferedIndex);
     this._update();
+  }
+  updateSlidesPerView(visibleCount) {
+    this.visibleCount = visibleCount;
+    this._resize();
   }
 
   _dragStart(e) {

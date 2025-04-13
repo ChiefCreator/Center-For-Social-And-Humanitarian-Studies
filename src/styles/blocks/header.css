@@ -35,3 +35,21 @@
 .header__logo {
   width: 150px;
 }
+
+@media (max-width: 1279.5px) {
+  .header__nav {
+    display: none;
+  }
+  .header__menu {
+    gap: 15px;
+  }
+}
+
+@media (max-width: 429.5px) {
+  .header__button-send {
+    display: none;
+  }
+  .header__delimiter {
+    display: none;
+  }
+}

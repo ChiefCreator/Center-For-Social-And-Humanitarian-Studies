@@ -17,3 +17,16 @@
   flex-direction: column;
   gap: 30px;
 }
+
+@media (max-width: 1023.5px) {
+  .section-about__header {
+    flex-direction: column;
+    gap: 15px;
+  }
+  .section-about__body {
+    margin-top: 15px;
+  }
+  .section-about__advantages {
+    gap: 10px;
+  }
+}

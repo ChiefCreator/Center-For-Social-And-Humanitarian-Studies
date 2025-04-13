@@ -1,10 +1,12 @@
 <footer class="footer">
   <div class="container">
     <div class="footer-container">
-        @@include("./logo.html")
+        @@include("./logo.html", {
+          class: "footer__logo",
+        })
 
-        <div class="links-block">
-          <h6 class="links-block__title">Навигация  по сайту</h6>
+        <div class="links-block links-block_navigation">
+          <h6 class="links-block__title">Навигация</h6>
       
           <nav class="links-block__navigation">
             <ul class="links-block__list">
@@ -54,7 +56,7 @@
           </nav>
         </div>
       
-        <div class="links-block">
+        <div class="links-block links-block_contact">
           <h6 class="links-block__title">Связаться</h6>
       
           <ul class="links-block__list">

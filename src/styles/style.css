@@ -20,6 +20,10 @@
 @import "./blocks/performance-tab-panel.css";
 @import "./blocks/social-connections.css";
 @import "./blocks/advantage-content.css";
+@import "./blocks/mobile-menu-button.css";
+@import "./blocks/menu-desktop.css";
+@import "./blocks/menu-mobile.css";
+@import "./blocks/button-close.css";
 
 
 @import "./blocks/header.css";

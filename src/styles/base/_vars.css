@@ -24,4 +24,16 @@
 
   --font-h1: "Roboto Serif", serif;
   --font-text: "Roboto";
+
+  --breakpoint-mobile-s: 375px;
+  --breakpoint-mobile-l: 430px;
+
+  --breakpoint-tablet-s: 600px;
+  --breakpoint-tablet-m: 768px;
+  --breakpoint-tablet-l: 1024px;
+
+  --breakpoint-desktop-s: 1280px;
+  --breakpoint-desktop-m: 1366px;
+  --breakpoint-desktop-l: 1440px;
+  --breakpoint-desktop-xxl: 1920px;
 }

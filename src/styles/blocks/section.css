@@ -1,5 +1,5 @@
 .section {
-  margin-bottom: 100px;
+  margin-bottom: clamp(40px, 5vw, 100px);
 }
 .section:last-child {
   margin-bottom: 0;
@@ -10,7 +10,7 @@
 }
 
 .section__title {
-  font-size: 28px;
+  font-size: clamp(16px, 4.5vw, 28px);
   font-weight: 500;
   font-family: var(--font-h1);
   color: var(--color-neutral-contrast);
@@ -18,7 +18,18 @@
 }
 
 .section__description {
-  font-size: 18px;
+  font-size: clamp(15px, 4vw, 18px);
   color: var(--color-neutral-contrast--light);
   font-family: var(--font-text);
+}
+
+@media (max-width: 767.5px) {
+  .section__header {
+    margin-bottom: 25px;
+  }
+}
+@media (max-width: 599.5px) {
+  .section__header {
+    margin-bottom: 15px;
+  }
 }

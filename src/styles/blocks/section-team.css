@@ -13,7 +13,7 @@
 }
 
 .team-description__title {
-  font-size: 24px;
+  font-size: clamp(16px, 4.5vw, 28px);
   font-weight: 400;
   font-family: var(--font-h1);
   color: var(--color-neutral-contrast);
@@ -28,7 +28,29 @@
 }
 
 .team-description__text {
-  font-size: 18px;
+  font-size: clamp(15px, 4vw, 18px);
   color: var(--color-neutral-contrast--light);
   font-family: var(--font-text);
+}
+
+@media (max-width: 1023.5px) {
+  .section-team__header {
+    flex-direction: column;
+    gap: 15px;
+  }
+  .section-team__body {
+    margin-top: 15px;
+  }
+  .section-team__advantages {
+    gap: 10px;
+  }
+  .team-description__list {
+    grid-template-columns: 1fr;
+    gap: 5px;
+  }
+}
+@media (max-width: 429.5px) {
+  .team-description {
+    margin-top: 15px;
+  }
 }

@@ -1,0 +1,34 @@
+.menu-desktop {
+  position: absolute;
+  margin-top: 10px;
+  width: 100%;
+  max-width: 200px;
+  padding: 15px;
+  border-radius: 5px;
+  background-color: white;
+  border: 1px solid var(--color-secondary--dark);
+
+  display: none;
+}
+
+.menu-desktop__header {
+  margin-bottom: 5px;
+}
+
+.menu-desktop__title {
+  font-size: 16px;
+  font-weight: 500;
+  font-family: var(--font-text);
+}
+
+.menu-desktop__links {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+@media ((min-width: 600px) and (max-width: 1279.5px)) {
+  .menu-desktop.open {
+    display: block;
+  }
+}

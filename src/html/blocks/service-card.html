@@ -4,9 +4,13 @@
   </div>
 
   <div class="service-card__content">
-    <span class="service-card__order">@@order</span>
+    <span class="service-card__order breakpoint-desktop">@@order</span>
 
-    <h4 class="service-card__title">@@title</h4>
+    <div class="service-card__title-wrapper">
+      <span class="service-card__order breakpoint-mobile">@@order</span>
+      <h4 class="service-card__title">@@title</h4>
+    </div>
+
     <p class="service-card__description">@@description</p>
 
     @@include("./button-link.html", {

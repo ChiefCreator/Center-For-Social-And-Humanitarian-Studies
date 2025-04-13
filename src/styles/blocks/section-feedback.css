@@ -18,3 +18,13 @@
   margin-top: 10px;
   max-width: 600px;
 }
+
+@media (max-width: 1023.5px) {
+  .section-feedback__container {
+    flex-direction: column;
+    gap: 15px;
+  }
+  .section-feedback__form-wrapper {
+    max-width: 100%;
+  }
+}
