@@ -33,7 +33,7 @@
 }
 
 .header__logo {
-  width: 150px;
+  max-width: 220px;
 }
 
 @media (max-width: 1279.5px) {
@@ -42,6 +42,12 @@
   }
   .header__menu {
     gap: 15px;
+  }
+}
+
+@media (max-width: 599.5px) {
+  .header__logo {
+    max-width: 180px;
   }
 }
 
